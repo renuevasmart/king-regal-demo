@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>King Regal · La historia del reino</title>
+<meta name="description" content="La historia de King Regal contada con golosinas: de Oliva (Valencia) a más de 80 países.">
+<meta name="theme-color" content="#050a3d">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="https://www.kingregal.com/wp-content/uploads/elementor/thumbs/King_Regal_logo_contorneadoyvectorizado_2026-scaled-rthdjhzotqrmnjgjmbpzcq88r1l3ik6qbvyi051q80.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#08115c;--navy-d:#050a3d;--red:#d11a2f;--red-d:#a3121f;--yellow:#ffc93c;
+  --display:'Bricolage Grotesque',system-ui,sans-serif;--ui:'DM Sans',system-ui,sans-serif;--ease:cubic-bezier(.2,.75,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:var(--ui);background:var(--navy-d);color:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);line-height:.98;letter-spacing:-.03em;font-weight:800}
+.y{color:var(--yellow)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--yellow);margin-bottom:16px}
+.eyebrow::before{content:"";width:26px;height:3px;border-radius:3px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;padding:15px 26px;border-radius:999px;font-size:1rem;white-space:nowrap;transition:transform .25s var(--ease),box-shadow .25s,background .25s,color .25s}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 6px 0 var(--red-d)}
+.btn-red:hover{transform:translateY(-3px);box-shadow:0 9px 0 var(--red-d)}
+.btn-ghost{border:2px solid rgba(255,255,255,.6)}
+.btn-ghost:hover{background:#fff;color:var(--navy);border-color:#fff}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;border-radius:8px}
+
+header{position:fixed;inset:0 0 auto;z-index:60;background:linear-gradient(rgba(5,10,61,.85),rgba(5,10,61,0))}
+.nav{width:min(1200px,100% - 40px);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;height:84px}
+.nav img{width:64px;height:64px;object-fit:contain}
+.nav .r{display:flex;gap:10px;align-items:center}
+.nav .btn{padding:11px 20px;font-size:.9rem}
+.nav .short{font-size:.88rem;font-weight:700;opacity:.8;padding:8px 10px}
+.nav .short:hover{opacity:1}
+
+/* ---------- ESCENA FIJADA ---------- */
+.story{position:relative;height:1000vh;height:1000svh}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;
+  background:radial-gradient(120% 90% at 70% 40%,#1b2a8f 0%,var(--navy) 42%,var(--navy-d) 100%)}
+#candy{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y}
+.layer{position:absolute;z-index:2;pointer-events:none;opacity:0;will-change:opacity,transform}
+.layer.live{pointer-events:auto}
+.sc::before{content:"";position:absolute;inset:-16% -22%;z-index:-1;background:radial-gradient(closest-side,rgba(5,10,61,.6),transparent);pointer-events:none}
+:root{--gx:max(20px,calc((100vw - 1200px)/2))}
+
+.l-a{left:var(--gx);top:22%;max-width:min(680px,58vw);opacity:1}
+.l-a h1{font-size:clamp(3rem,7.6vw,6.6rem)}
+.l-a .sub{display:block;font-family:var(--display);font-weight:600;font-size:clamp(1.3rem,2.5vw,1.9rem);color:var(--yellow);margin-top:20px;letter-spacing:-.01em}
+.l-a .go{display:block;margin-top:34px;font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+
+.l-b{left:var(--gx);top:50%;transform:translateY(-50%);max-width:min(720px,60vw)}
+.l-b p{font-family:var(--display);font-weight:600;font-size:clamp(1.5rem,3vw,2.5rem);line-height:1.18;letter-spacing:-.02em}
+.l-b .w{opacity:.2;transition:opacity .3s}.l-b .w.on{opacity:1}
+
+.l-c{inset:0}
+.l-c .head{position:absolute;left:0;right:0;top:15%;text-align:center;padding:0 20px}
+.l-c h2{font-size:clamp(2rem,4.6vw,3.8rem);max-width:15ch;margin:0 auto}
+.lbl{position:absolute;transform:translateX(-50%);text-align:center;width:min(15vw,220px);min-width:150px}
+.lbl b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(1.3rem,2vw,1.8rem);letter-spacing:-.02em}
+.lbl span{display:block;font-size:.92rem;opacity:.85;line-height:1.35;margin-top:4px}
+
+.l-d{inset:0;display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,80px);align-items:center;padding:96px var(--gx) 40px}
+.l-d figure{height:min(62vh,560px);border-radius:28px;overflow:hidden;clip-path:inset(0 calc((1 - min(1,var(--lp)*3.2)) * 100%) 0 0 round 28px)}
+.l-d figure img{width:100%;height:100%;object-fit:cover;object-position:50% 85%;transform:scale(calc(1.15 - var(--lp)*.15))}
+.l-d h2{font-size:clamp(2rem,4.2vw,3.5rem)}
+.l-d .lead{margin:18px 0 24px;opacity:.85;max-width:44ch}
+.pil{list-style:none;display:grid;gap:10px}
+.pil li{padding:14px 18px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13)}
+.pil b{font-family:var(--display);font-size:1.15rem;letter-spacing:-.01em;display:block}
+.pil span{font-size:.92rem;opacity:.8}
+
+.l-e{left:var(--gx);top:50%;transform:translateY(-50%);max-width:min(560px,50vw)}
+.l-e h2{font-size:clamp(2.4rem,5.4vw,4.6rem)}
+.l-e p{margin:18px 0 28px;opacity:.88;font-size:1.08rem;max-width:44ch}
+.stats{display:flex;gap:clamp(18px,3vw,40px);flex-wrap:wrap}
+.stats b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,4vw,3.4rem);line-height:1;letter-spacing:-.04em}
+.stats b i{font-style:normal;color:var(--red)}
+.stats small{display:block;margin-top:8px;font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.8;max-width:14ch}
+
+.l-f{left:50%;bottom:9%;width:min(1000px,92vw);text-align:center;--bx:-50%}
+.l-f p{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,5.6vw,4.8rem);line-height:.98;letter-spacing:-.03em}
+
+.l-g{left:var(--gx);bottom:11%;max-width:min(580px,50vw)}
+.l-g h2{font-size:clamp(2rem,4vw,3.3rem);margin-bottom:22px}
+.deal{margin-bottom:20px}
+.deal p{opacity:.88;margin-bottom:12px;max-width:42ch}
+.hint{position:absolute;right:var(--gx);bottom:5%;z-index:2;font:700 .76rem var(--ui);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);pointer-events:none}
+
+/* progreso de la historia */
+.prog{position:absolute;left:0;top:0;height:3px;width:100%;z-index:5;background:var(--red);transform-origin:left;transform:scaleX(var(--pp,0))}
+
+footer{background:var(--navy-d);padding:60px 0 32px;border-top:1px solid rgba(255,255,255,.12)}
+.f{width:min(1200px,100% - 40px);margin-inline:auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;align-items:center}
+.f ul{list-style:none;display:flex;gap:22px;flex-wrap:wrap;font-weight:600;font-size:.92rem;opacity:.85}
+.f ul a:hover{color:var(--yellow)}
+.f img{width:84px}
+.copy{width:min(1200px,100% - 40px);margin:36px auto 0;font-size:.82rem;opacity:.55}
+
+/* sin WebGL o movimiento reducido: lectura lineal */
+.story.static{height:auto}
+.story.static .stage{position:relative;height:auto;min-height:100svh;padding-bottom:60px;
+  background:var(--navy-d)}
+.fbg{display:none}
+.story.static .fbg{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.story.static .stage::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(5,10,61,.95),rgba(8,17,92,.6))}
+.story.static #candy,.story.static .lbl,.story.static .hint,.story.static .l-f,.story.static .prog{display:none}
+.story.static .layer{position:relative;inset:auto;left:auto;top:auto;bottom:auto;opacity:1!important;transform:none!important;max-width:none;pointer-events:auto;margin:0 var(--gx);padding:56px 0}
+.story.static .l-a{padding-top:150px}
+.story.static .l-b .w{opacity:1}
+.story.static .l-d{display:block;padding:56px 0;margin:0 var(--gx)}
+.story.static .l-d figure{clip-path:none;margin-bottom:24px;height:300px}
+.story.static .l-c .head{position:static}
+.story.static .l-c{padding:40px 0}
+
+@media(max-width:860px){
+  .l-a{top:auto;bottom:10%;right:20px;max-width:none}
+  .l-b{max-width:none;right:20px;top:auto;bottom:8%;transform:none}
+  .l-c .head{top:11%}
+  .lbl{min-width:0;width:44vw}
+  .lbl span{font-size:.8rem}
+  .l-d{grid-template-columns:1fr;align-content:center;gap:16px;padding-top:84px}
+  .l-d figure{height:26vh}
+  .l-d .lead{display:none}
+  .pil li{padding:10px 14px}.pil span{font-size:.82rem}
+  .l-e{top:auto;bottom:7%;transform:none;max-width:none;right:20px}
+  .l-e p{margin:12px 0 18px;font-size:1rem}
+  .l-g{max-width:none;right:20px;bottom:6%}
+  .l-g h2{margin-bottom:14px}.deal{margin-bottom:12px}.deal p{margin-bottom:8px;font-size:.95rem}
+  .l-f{bottom:12%}
+  .hint,.nav .short{display:none}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#top" aria-label="King Regal, inicio"><img src="https://www.kingregal.com/wp-content/uploads/elementor/thumbs/King_Regal_logo_contorneadoyvectorizado_2026-scaled-rthdjhzotqrmnjgjmbpzcq88r1l3ik6qbvyi051q80.png" alt="King Regal" width="64" height="64"></a>
+    <div class="r">
+      <a class="short" href="index.html">Versión corta</a>
+      <a class="btn btn-red" href="https://www.lafabricadegolosinas.com/es/" target="_blank" rel="noopener">Tienda online →</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="story" id="top">
+  <div class="stage">
+    <img class="fbg" src="https://www.kingregal.com/wp-content/uploads/2026/09/1-banner-landing-king-regal_menos-peso.jpg" alt="" referrerpolicy="no-referrer" aria-hidden="true">
+    <canvas id="candy" aria-hidden="true"></canvas>
+    <div class="prog" id="prog" aria-hidden="true"></div>
+
+    <!-- 1 · gancho -->
+    <div class="layer l-a sc" data-range="0,0.1,first">
+      <h1>Regaliz, gominolas y <span class="y">golosinas</span></h1>
+      <span class="sub">…con mucho que contar.</span>
+      <span class="go">Baja y te lo cuento</span>
+    </div>
+
+    <!-- 2 · la idea -->
+    <div class="layer l-b sc" data-range="0.115,0.255" data-base="translateY(-50%)" data-base-m="">
+      <span class="eyebrow">Nuestra esencia · Mucho más que golosinas</span>
+      <p id="idea">Todo empezó con una idea: crear chuches capaces de alegrarte el día. Más de 25 años después, seguimos inventando sabores, colores y texturas para que siempre tengas una buena excusa para darte un capricho.</p>
+    </div>
+
+    <!-- 3 · las cuatro familias -->
+    <div class="layer l-c" data-range="0.27,0.5">
+      <div class="head sc"><span class="eyebrow">Nuestro universo</span><h2>Muchas formas de hacerte la vida más <span class="y">dulce</span></h2></div>
+      <div class="lbl"><b>Golosinas</b><span>Colores, formas y sabores para todos los antojos</span></div>
+      <div class="lbl"><b>Grageados</b><span>Pequeños bocados. Grandes tentaciones</span></div>
+      <div class="lbl"><b>Chocolateados</b><span>Porque todo mejora con chocolate</span></div>
+      <div class="lbl"><b>Chicles</b><span>Con sabores que no tienen prisa por irse</span></div>
+    </div>
+
+    <!-- 4 · la fábrica -->
+    <div class="layer l-d" data-range="0.535,0.635">
+      <figure><img src="https://www.kingregal.com/wp-content/uploads/2026/09/imagen-fabrica-landing-king-regal-menos-peso.jpg" alt="Operaria con guantes manipulando regaliz rojo en la fábrica de King Regal" loading="lazy"></figure>
+      <div>
+        <span class="eyebrow">Nuestra garantía</span>
+        <h2>Hacerlo dulce también es hacerlo <span class="y">bien</span></h2>
+        <p class="lead">Cuidamos cada paso del proceso, desde la selección de ingredientes hasta la producción, para ofrecerte golosinas de calidad y con el mejor sabor del mundo.</p>
+        <ul class="pil">
+          <li><b>Calidad certificada</b><span>Trabajamos con los más altos estándares para ofrecerte productos de confianza.</span></li>
+          <li><b>Ingredientes premium</b><span>Seleccionamos ingredientes de primera calidad que se notan en el sabor.</span></li>
+          <li><b>Innovación constante</b><span>Nuevos sabores, formatos y experiencias para seguir sorprendiéndote.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 5 · el mundo -->
+    <div class="layer l-e sc" data-range="0.655,0.77" data-trigger-count data-base="translateY(-50%)" data-base-m="">
+      <span class="eyebrow">Presencia internacional</span>
+      <h2>De Oliva al <span class="y">mundo</span></h2>
+      <p>Desde nuestra sede en Oliva (Valencia), llevamos el sabor de King Regal a más de 80 países. Nuestra pasión por el regaliz, las gominolas y la innovación nos ha llevado a estar presentes en miles de tiendas de todo el mundo.</p>
+      <div class="stats">
+        <div><b><i>+</i><span data-count="80">0</span></b><small>Países nos eligen</small></div>
+        <div><b><i>+</i><span data-count="25">0</span></b><small>Años de experiencia</small></div>
+        <div><b><i>+</i><span data-count="1000">0</span></b><small>Referencias de productos</small></div>
+      </div>
+    </div>
+
+    <!-- 6 · la corona -->
+    <div class="layer l-f" data-range="0.8,0.915" data-base="translateX(-50%)">
+      <p>Bienvenidos al <span class="y">reino</span><br>de las chuches</p>
+    </div>
+
+    <!-- 7 · cierre -->
+    <div class="layer l-g sc" data-range="0.935,1,last">
+      <h2>Un reino que sigue <span class="y">creciendo</span></h2>
+      <div class="deal"><p>Descubre tus golosinas favoritas en nuestra tienda online.</p>
+        <a class="btn btn-red" href="https://www.lafabricadegolosinas.com/es/" target="_blank" rel="noopener">Quiero probarlas →</a></div>
+      <div class="deal"><p>¿Eres distribuidor? Te ayudamos a llevar King Regal a tus clientes.</p>
+        <a class="btn btn-ghost" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=r0lA_JN16km4IUHZR-LXHr1ESGcp5MpMhWaCT-X8kD5UNk01QkdEMjdVSVEzUU1ZQ0kxUklJRzFBTC4u" target="_blank" rel="noopener">Quiero distribuirlas →</a></div>
+    </div>
+    <p class="hint" aria-hidden="true">Pasa el cursor por las golosinas</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="f">
+    <img src="https://www.kingregal.com/wp-content/uploads/elementor/thumbs/King_Regal_logo_contorneadoyvectorizado_2026-scaled-rthdjhzotqrmnjgjmbpzcq88r1l3ik6qbvyi051q80.png" alt="King Regal" loading="lazy">
+    <ul>
+      <li><a href="mailto:tromero@kingregal.com">Trabaja con nosotros</a></li>
+      <li><a href="https://www.kingregal.com/aviso-legal/">Aviso legal</a></li>
+      <li><a href="https://www.kingregal.com/politica-de-privacidad/">Privacidad</a></li>
+      <li><a href="https://www.kingregal.com/politica-de-cookies/">Cookies</a></li>
+      <li><a href="https://www.instagram.com/kingregaloficial/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="index.html">Versión corta</a></li>
+    </ul>
+  </div>
+  <p class="copy">© 2026 King Regal · Oliva (Valencia), España. Rediseño conceptual.</p>
+</footer>
+
+<script>
+(() => {
+  const idea = document.getElementById('idea');
+  idea.innerHTML = idea.textContent.trim().split(/\s+/).map(w => `<span class="w">${w}</span>`).join(' ');
+  const story = document.querySelector('.story'), prog = document.getElementById('prog');
+  addEventListener('scroll', () => {
+    const t = story.offsetHeight - innerHeight;
+    prog.style.setProperty('--pp', Math.min(1, Math.max(0, -story.getBoundingClientRect().top / t)).toFixed(4));
+  }, { passive: true });
+  // modo lectura lineal: sin animación de contadores
+  const goStatic = () => { story.classList.add('static'); document.querySelectorAll('span[data-count]').forEach(c => c.textContent = (+c.dataset.count).toLocaleString('es-ES')); };
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) goStatic();
+  // si la escena 3D no arranca (sin WebGL o CDN caído), lectura lineal
+  setTimeout(() => { if (!window.__story3d) goStatic(); }, 6000);
+})();
+</script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<script type="module" src="story3d.js"></script>
+</body>
+</html>
